@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="moneyvalue.png">
+
+  <!-- CSS STYLES -->
+  <link rel="stylesheet" href="style.css">
+  <title>Currency Converter</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Currency Exchange Calculator</h2>
+    <form>
+
+      <div class="amount">
+        <p>Amount</p>
+        <input type="text" value="1">
+      </div>
+
+      <!-- CONVERTION PANNEL -->
+      <div class="convertion-box">
+
+        <!-- ORIGINAL CURRENCY -->
+        <div class="from">
+          <p>From:</p>
+
+          <!-- ORIGINAL CURRENCY SELECTION -->
+          <div class="select-input">
+
+            <!-- COUNTRY FLAG -->
+            <img src="https://flagcdn.com/h20/us.png">
+            <select></select>
+
+          </div>
+        </div>
+
+        <!-- REVERT CURRENT CURRENCIES -->
+        <div class="reverse"><i class="fa-solid fa-rotate"></i></div>
+
+        <!-- DESIRED CURRENCY CONVERSION -->
+        <div class="to">
+          <p>To:</p>
+
+          <!-- DESIRED CURRENCY SELECTION -->
+          <div class="select-input">
+
+            <!-- COUNTRY FLAG -->
+            <img src="https://flagcdn.com/h20/br.png">
+            <select></select>
+
+          </div>
+        </div>
+
+        <div class="result">Getting exchange rate...</div>
+
+        <!-- CONVERT ACTION BUTTON -->
+        <button>Convert amount</button>
+
+      </div>
+    </form>
+  </div>
+
+  <script src="country.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

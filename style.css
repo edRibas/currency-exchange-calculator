@@ -1,0 +1,163 @@
+/* GOOGLE FONT - ROBOTO SLAB */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap');
+
+/* VARIABLES */
+:root {
+  /* FONT-FAMILY */
+  --font-family: 'Roboto Slab', serif;
+
+  /* COLORS */
+  --background-color: rgba(20, 20, 20, 0.9);
+  --convertion-pannel-color: rgb(19, 19, 19);
+  --font-color: aliceblue;
+}
+
+* {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--background-color);
+  padding: 0 10px;
+  min-height: 100vh;
+}
+
+.container {
+  width: 30rem;
+  color: var(--font-color);
+  background: var(--convertion-pannel-color);
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 30px 50px;
+  box-shadow: 4px 4px 6px black;
+  border: 1px solid wheat;
+  backdrop-filter: blur(7.0px);
+}
+
+.container h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.container form {
+  margin: 30px 0 10px 0;
+}
+
+.container form p {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.container form input {
+  width: 100%;
+  border-radius: 8px;
+  height: 40px;
+  font-size: 1rem;
+  padding: 0 15px;
+  background: rgba(255, 255, 255, 0.11);
+  color: var(--font-color);
+  border: none;
+}
+
+.container form input:hover {
+  border: 1px solid wheat;
+}
+
+.container form input:focus {
+  padding: 0 15px;
+  border: 2px solid wheat;
+}
+
+.container form .convertion-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.container form .from,
+.container form .to {
+  width: 100%;
+}
+
+.container .convertion-box .select-input {
+  display: flex;
+  width: 100%;
+  padding: 0 20px;
+  background: inherit;
+  cursor: pointer;
+  border: 1px solid gainsboro;
+  height: 60px;
+  align-items: center;
+  border-radius: 5px 25px 5px 25px;
+  transition: all 0.3s ease;
+}
+
+.container .convertion-box .select-input:hover {
+  border: 1px solid wheat;
+}
+
+.container .convertion-box .select-input img {
+  margin-right: 10px;
+  max-width: 50px;
+}
+
+.container .convertion-box .select-input select {
+  width: 100%;
+  text-align: center;
+  background: rgba(245, 222, 179, 0.4);
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--font-color);
+  border-radius: 10px;
+}
+
+.container .convertion-box .select-input select option {
+  color: black;
+}
+
+.container .convertion-box .reverse {
+  margin-top: 22px;
+  font-size: 20px;
+  cursor: pointer;
+  transform: rotate(90deg);
+  transition: all .2s ease;
+}
+
+.container .convertion-box .reverse:hover {
+  color: wheat;
+}
+
+.container form .result {
+  font-size: 1.2rem;
+  margin: 20px 0 30px;
+}
+
+.container form button {
+  width: 100%;
+  height: 30px;
+  font-size: 1rem;
+  color: aliceblue;
+  background: rgba(245, 222, 179, 0.4);
+  cursor: pointer;
+  transition: all .2 ease;
+  border-radius: 10px;
+}
+
+.container form button:hover {
+  background: wheat;
+  color: black;
+}
